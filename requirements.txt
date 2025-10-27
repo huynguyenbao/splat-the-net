@@ -1,0 +1,17 @@
+torch==2.0.1
+torchvision==0.15.2
+torchaudio==2.0.2
+numpy<2
+tqdm
+wandb
+matplotlib
+pyyaml
+mkl==2024.0
+Cython==0.29.36
+open3d==0.18.0
+pydicom
+tifffile
+pyvista
+opencv-python
+tensorboard
+tensorboardX

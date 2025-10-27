@@ -1,0 +1,12 @@
+name: splat_the_net
+channels:
+  - conda-forge
+dependencies:
+  - cudatoolkit=11.7
+  - plyfile
+  - python=3.9.20
+  - pip=24.2
+  - pip:
+    - tqdm
+    - wandb
+    - matplotlib

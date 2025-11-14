@@ -155,7 +155,11 @@ def fetchPly(path):
         ) / 255.0
     else:
         colors = np.random.rand(positions.shape[0], 3)
-    normals = np.vstack([vertices["nx"], vertices["ny"], vertices["nz"]]).T
+    # normals = np.vstack([vertices["nx"], vertices["ny"], vertices["nz"]]).T
+    if {"nx", "ny", "nz"}.issubset(vertices.data.dtype.names):
+        normals = np.vstack([vertices["nx"], vertices["ny"], vertices["nz"]]).T
+    else:
+        normals = np.random.rand(positions.shape[0], 3)
     return BasicPointCloud(points=positions, colors=colors, normals=normals)
 
 

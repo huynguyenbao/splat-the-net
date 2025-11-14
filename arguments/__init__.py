@@ -62,6 +62,8 @@ class ModelParams(ParamGroup):
         self.data_device = "cuda"
         self.eval = False
 
+        self.n_initial_primitives = 0
+
         self.n_neurons = 8
         self.toy_example = False
 
@@ -80,7 +82,6 @@ class PipelineParams(ParamGroup):
         self.debug = False
         self.softplus_rgb = False
 
-        self.n_initial_primitives = 0
 
         super().__init__(parser, "Pipeline Parameters")
 

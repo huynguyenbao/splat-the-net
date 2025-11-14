@@ -16,7 +16,7 @@ Our rasterizer is implemented in CUDA, based on the [CUDA implementation](https:
 1. Clone the repository recursively, along with the submodules.
 
 ```
-git clone --recursive https://github.com/huynguyenbao/splat-the-net
+git clone --recursive https://github.com/huynguyenbao/splat-the-net.git
 cd splat-the-net
 git submodule update --init --recursive
 ```
